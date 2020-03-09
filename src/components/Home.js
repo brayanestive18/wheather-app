@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-// import PlayerTwo from "./PlayerTwo";
 // import Player from "./Player";
+// import PlayerTwo from "./PlayerTwo";
 // import Player3 from './Player3'
 import Player4 from "./Player4";
 import "../App.css";
