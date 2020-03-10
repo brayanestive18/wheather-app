@@ -28,28 +28,18 @@ class Player4 extends Component {
     this.player.src({
       // src: "http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TANT/tu1_manifest.m3u8",
       src:
-        "http://profficialsite.origin.mediaservices.windows.net/c51358ea-9a5e-4322-8951-897d640fdfd7/tearsofsteel_4k.ism/manifest(format=mpd-time-csf)",
+        "https://content.uplynk.com/event/ext/d09b16c953aa40c98dd8c513526aca5a/a112720149.m3u8?oid=d09b16c953aa40c98dd8c513526aca5a&ad=espn_latamvod_es&ad.vast3=1&ad.vid=8aa5b8b2-3a63-41cd-83f6-768f406a8653&ad.tfcd=0&ad.adUnit=/latin_south/espnplay/null&ad.pp=espn-core-ssai&ad.vip=190.70.23.6&ad.ppid=&ad.description_url=null&ss_req=1&ad.ssss=vdms&ad.hl=es&ad.npa=0&ad.msid=null&ad.an=espnapp&ad.extcalls=liveconnect&ad.cust_params=chan=latin_south%26authp=null%26nlsnAppID=null%26nlsnDevGrp=devgrp%2CUNWN%26vdm=vod%26devOS=null%26devType=null%26plt=null%26swid=%26unid=null%26isDnt=0%26isAutoplay=0%26isMute=0%26vps=null%26stp=vdms%26lang=es&eid=a112720149&ct=e&tc=1&exp=1583785665&rn=809180648&sig=e7012917e747852700138498a17869ccf9f3c77f7ede38172aa748c24ee67b8c",
       // src: this.props.playURL
       // type: "application/dash+xml",
-      keySystems: {
-        "com.microsoft.playready": {
-          // url: this.props.streamInfo.licenseAcquisitionUrl
-          url:
-            "http://playready-testserver.azurewebsites.net/rightsmanager.asmx?PlayRight=1&UseSimpleNonPersistentLicense=1"
-        }
-      }
-      /* emeHeaders: {
-                "Common-Header": "value"
-            },
-            keySystems: {
-                "com.widevine.alpha": {
-                    licenseUri: "https://content.uplynk.com/wv"
-                },
+      // keySystems: {
+        // "com.microsoft.playready": ""
+        /* {
+          url: this.props.streamInfo.licenseAcquisitionUrl
+          // url:
+            // "http://playready-testserver.azurewebsites.net/rightsmanager.asmx?PlayRight=1&UseSimpleNonPersistentLicense=1"
+        } */
+      // }
 
-                "com.microsoft.playready": {
-                    licenseUri: "https://content.uplynk.com/pr"
-                }
-            } */
     });
     console.log("Eme: ", this.player);
 

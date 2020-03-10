@@ -24,6 +24,7 @@
     "shaka-player": "^2.5.9",
     "shaka-player-react": "^1.0.1",
     "video.js": "^7.6.6",
+    "videojs-contrib-dash": "^2.11.0",
     "videojs-contrib-eme": "^3.6.0",
     "videojs-contrib-hls.js": "^3.2.0"
   },
