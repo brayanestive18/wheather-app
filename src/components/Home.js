@@ -3,7 +3,8 @@ import React, { Component } from "react";
 // import Player from "./Player";
 // import PlayerTwo from "./PlayerTwo";
 // import Player3 from './Player3'
-import Player4 from "./Player4";
+// import Player4 from "./Player4";
+import Player5 from "./Player5";
 import "../App.css";
 
 class Home extends Component {
@@ -20,7 +21,8 @@ class Home extends Component {
                 {/* <Player /> */}
                 {/* <PlayerTwo /> */}
                 {/* <Player3/> */}
-                <Player4 />
+                {/* <Player4 /> */}
+                <Player5 />
             </div>
         );
     }

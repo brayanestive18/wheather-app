@@ -21,14 +21,16 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "serve": "^11.3.0",
     "shaka-player": "^2.5.9",
     "shaka-player-react": "^1.0.1",
     "video.js": "^7.6.6",
+    "videojs-contrib-dash": "^2.11.0",
     "videojs-contrib-eme": "^3.6.0",
     "videojs-contrib-hls.js": "^3.2.0"
   },
   "scripts": {
-    "start": "PORT=2020 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
