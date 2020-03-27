@@ -1,0 +1,390 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200327.082600.21028.0.001.json",
+    "dumpEventTime": "2020-03-27T08:26:00Z",
+    "dumpEventTimeStamp": "1585315560109",
+    "processId": 21028,
+    "cwd": "/home/brayandiaz/Documents/Projects_React/wheather-app",
+    "commandLine": [
+      "/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node",
+      "/home/brayandiaz/Documents/Projects_React/wheather-app/node_modules/react-scripts/scripts/build.js"
+    ],
+    "nodejsVersion": "v11.14.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.12",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "11.14.0",
+      "v8": "7.0.276.38-node.18",
+      "uv": "1.27.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.37.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.14.0/node-v11.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.14.0/node-v11.14.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-91-generic",
+    "osVersion": "#92-Ubuntu SMP Fri Feb 28 11:09:48 UTC 2020",
+    "osMachine": "x86_64",
+    "host": "hp-probook-440-g2"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000a6e18d",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x000000000095c8a3",
+      "symbol": "node::OnFatalError(char const*, char const*) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3b77e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b3b9b4",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f3b002",
+      "symbol": " [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f3b108",
+      "symbol": "v8::internal::Heap::CheckIneffectiveMarkCompact(unsigned long, double) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f47828",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f4833b",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f4b071",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000000f152a4",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x00000000011cb5ae",
+      "symbol": "v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node]"
+    },
+    {
+      "pc": "0x00001d3d6aa4fc5d",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1484845056,
+    "totalCommittedMemory": 1480077136,
+    "usedMemory": 1419903616,
+    "availableMemory": 49233192,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 42224,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 1463672,
+        "capacity": 2062336,
+        "used": 362936,
+        "available": 1699400
+      },
+      "old_space": {
+        "memorySize": 1187188736,
+        "committedMemory": 1186232024,
+        "capacity": 1136020616,
+        "used": 1130841784,
+        "available": 5178832
+      },
+      "code_space": {
+        "memorySize": 7340032,
+        "committedMemory": 7080928,
+        "capacity": 6403456,
+        "used": 6403456,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 5779456,
+        "committedMemory": 5440048,
+        "capacity": 4390720,
+        "used": 4390720,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 279818240,
+        "committedMemory": 279818240,
+        "capacity": 319744096,
+        "used": 277871200,
+        "available": 41872896
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 336.534,
+    "kernelCpuSeconds": 7.75349,
+    "cpuConsumptionPercent": 72.4815,
+    "maxRss": 1608712192,
+    "pageFaults": {
+      "IORequired": 21,
+      "IONotRequired": 1942132
+    },
+    "fsActivity": {
+      "reads": 168992,
+      "writes": 53088
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 254.863,
+    "kernelCpuSeconds": 5.06206,
+    "cpuConsumptionPercent": 54.721,
+    "fsActivity": {
+      "reads": 131768,
+      "writes": 64
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "npm_package_dependencies_videojs_contrib_eme": "^3.6.0",
+    "npm_package_dependencies__material_ui_icons": "^4.5.1",
+    "USER": "brayandiaz",
+    "LC_TIME": "es_CO.UTF-8",
+    "npm_package_devDependencies_redux_mock_store": "^1.5.4",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v11.14.0 linux x64",
+    "TEXTDOMAIN": "im-config",
+    "XDG_SEAT": "seat0",
+    "npm_package_dependencies__material_ui_core": "^4.8.3",
+    "npm_config_bin_links": "true",
+    "XDG_SESSION_TYPE": "x11",
+    "SSH_AGENT_PID": "3702",
+    "npm_node_execpath": "/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node",
+    "npm_config_init_version": "1.0.0",
+    "SHLVL": "1",
+    "QT4_IM_MODULE": "xim",
+    "HOME": "/home/brayandiaz",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "LESS": "-R",
+    "OLDPWD": "/home/brayandiaz/Documents/Projects_React/wheather-app",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_package_dependencies_react_player": "^1.15.2",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_BIN": "/home/brayandiaz/.nvm/versions/node/v11.14.0/bin",
+    "TERM_PROGRAM_VERSION": "1.43.2",
+    "npm_package_browserslist_production_1": "not dead",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "ZSH": "/home/brayandiaz/.oh-my-zsh",
+    "npm_package_devDependencies_enzyme_adapter_react_16": "^1.15.2",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_config_init_license": "MIT",
+    "GRADLE_HOME": "/opt/gradle/gradle-5.0",
+    "GTK_MODULES": "gail:atk-bridge",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "PAGER": "less",
+    "YARN_WRAP_OUTPUT": "false",
+    "npm_config_version_tag_prefix": "v",
+    "LC_MONETARY": "es_CO.UTF-8",
+    "npm_package_dependencies_redux_thunk": "^2.3.0",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1001/bus",
+    "npm_package_dependencies_video_js": "^7.6.6",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "5936",
+    "COLORTERM": "truecolor",
+    "npm_package_description": "In the project directory, you can run:",
+    "npm_package_dependencies_react_scripts": "3.4.0",
+    "npm_package_dependencies_react_router_dom": "^5.1.2",
+    "NVM_DIR": "/home/brayandiaz/.nvm",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_dependencies__testing_library_react": "^9.5.0",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "IM_CONFIG_PHASE": "2",
+    "LOGNAME": "brayandiaz",
+    "GTK_IM_MODULE": "ibus",
+    "_": "/usr/bin/yarn",
+    "npm_package_dependencies_react_video_js_player": "^1.1.1",
+    "npm_package_private": "true",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "npm_package_dependencies_mux_js": "^5.5.1",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "USERNAME": "brayandiaz",
+    "XDG_SESSION_ID": "3",
+    "TERM": "xterm-256color",
+    "npm_package_dependencies_redux_logger": "^3.0.6",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "PORT=2020 react-scripts start",
+    "npm_config_ignore_scripts": "",
+    "GTK2_MODULES": "overlay-scrollbar",
+    "WINDOWPATH": "2",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_dependencies_videojs_contrib_hls_js": "^3.2.0",
+    "npm_package_dependencies_axios": "^0.19.1",
+    "npm_package_dependencies__videojs_http_streaming": "^1.12.1",
+    "PATH": "/tmp/yarn--1585315084017-0.7471520582673683:/home/brayandiaz/Documents/Projects_React/wheather-app/node_modules/.bin:/home/brayandiaz/.config/yarn/link/node_modules/.bin:/home/brayandiaz/.yarn/bin:/home/brayandiaz/.nvm/versions/node/v11.14.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/home/brayandiaz/.nvm/versions/node/v11.14.0/lib/node_modules/npm/bin/node-gyp-bin:/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node_modules/npm/bin/node-gyp-bin:/home/brayandiaz/.nvm/versions/node/v11.14.0/bin:/home/brayandiaz/.local/bin:/opt/gradle/gradle-5.0/bin:/opt/GitHub Desktop:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "NODE": "/home/brayandiaz/.nvm/versions/node/v11.14.0/bin/node",
+    "SESSION_MANAGER": "local/hp-probook-440-g2:@/tmp/.ICE-unix/3344,unix/hp-probook-440-g2:/tmp/.ICE-unix/3344",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_package_dependencies_serve": "^11.3.0",
+    "npm_package_name": "wheather-app",
+    "LC_ADDRESS": "es_CO.UTF-8",
+    "XDG_RUNTIME_DIR": "/run/user/1001",
+    "XDG_MENU_PREFIX": "gnome-",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_package_dependencies_react_redux": "^7.1.3",
+    "DISPLAY": ":0",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "LC_TELEPHONE": "es_CO.UTF-8",
+    "npm_package_dependencies_videojs_shaka": "^0.4.1",
+    "npm_package_dependencies_redux": "^4.0.5",
+    "npm_package_dependencies_react_dom": "^16.12.0",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XMODIFIERS": "@im=ibus",
+    "XAUTHORITY": "/run/user/1001/gdm/Xauthority",
+    "TERM_PROGRAM": "vscode",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "npm_lifecycle_script": "react-scripts build",
+    "SSH_AUTH_SOCK": "/run/user/1001/keyring/ssh",
+    "npm_package_scripts_test": "react-scripts test",
+    "npm_config_version_git_message": "v%s",
+    "LC_NAME": "es_CO.UTF-8",
+    "SHELL": "/usr/bin/zsh",
+    "npm_lifecycle_event": "build",
+    "npm_package_dependencies_videojs_contrib_dash": "^2.11.0",
+    "npm_package_dependencies__testing_library_jest_dom": "^4.2.4",
+    "npm_package_version": "0.1.0",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "ubuntu",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"build\"],\"original\":[\"build\"]}",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_package_dependencies__testing_library_user_event": "^7.1.2",
+    "LC_MEASUREMENT": "es_CO.UTF-8",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_git_sign": "",
+    "TEXTDOMAINDIR": "/usr/share/locale/",
+    "GPG_AGENT_INFO": "/run/user/1001/gnupg/S.gpg-agent:0:1",
+    "LC_IDENTIFICATION": "es_CO.UTF-8",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "npm_package_dependencies_dashjs": "^2.6.5",
+    "npm_config_strict_ssl": "true",
+    "XDG_VTNR": "2",
+    "QT_IM_MODULE": "ibus",
+    "PWD": "/home/brayandiaz/Documents/Projects_React/wheather-app",
+    "npm_execpath": "/usr/share/yarn/bin/yarn.js",
+    "npm_package_devDependencies_enzyme": "^3.11.0",
+    "CLUTTER_IM_MODULE": "xim",
+    "NVM_CD_FLAGS": "-q",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "LC_NUMERIC": "es_CO.UTF-8",
+    "npm_config_save_prefix": "^",
+    "npm_config_ignore_optional": "",
+    "LC_PAPER": "es_CO.UTF-8",
+    "npm_package_dependencies_shaka_player_react": "^1.0.1",
+    "npm_package_dependencies_hls_js": "^0.13.1",
+    "INIT_CWD": "/home/brayandiaz/Documents/Projects_React/wheather-app",
+    "npm_package_eslintConfig_extends": "react-app",
+    "npm_package_dependencies_shaka_player": "^2.5.9",
+    "npm_package_dependencies_react": "^16.12.0",
+    "BABEL_ENV": "production",
+    "NODE_ENV": "production",
+    "PORT": "2020",
+    "NODE_PATH": ""
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 63543,
+      "hard": 63543
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}

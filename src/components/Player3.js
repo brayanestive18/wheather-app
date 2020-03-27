@@ -3,6 +3,7 @@ import VideoPlayer from "react-video-js-player";
 // import videojs from "video.js";
 import "videojs-contrib-eme";
 import "@videojs/http-streaming";
+import "videojs-contrib-dash";
 
 // pausa adelantar retroceder pausa verde 1 amarillo -> Rota con el boton tigo
 
@@ -21,7 +22,8 @@ export default class Player3 extends Component {
         this.player = player;
         // this.player.eme();
         this.player.src({
-            src: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+            // src: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+            src: "http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps.mpd",
             emeHeaders: {
                 "Common-Header": "value"
             },
