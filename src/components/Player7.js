@@ -9,10 +9,10 @@ class Player7 extends Component {
       // "https://storage.googleapis.com/shaka-live-assets/player-source.m3u8";
       // "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
       // "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd";
-      // "https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd";
+      "https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd";
       //  "https://dash.akamaized.net/dash264/TestCases/1a/sony/SNE_DASH_SD_CASE1A_REVISED.mpd";
       // "http://dash.edgesuite.net/akamai/bbb_30fps/bbb_30fps.mpd";
-      "https://livesim.dashif.org/livesim/testpic_2s/Manifest.mpd";
+      // "https://livesim.dashif.org/livesim/testpic_2s/Manifest.mpd";
 
     const protData = {
       "com.microsoft.playready": {
