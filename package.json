@@ -26,6 +26,7 @@
     "serve": "^11.3.0",
     "shaka-player": "^2.5.9",
     "shaka-player-react": "^1.0.1",
+    "url-search-params-polyfill": "^8.0.0",
     "video.js": "^7.6.6",
     "videojs-contrib-dash": "^2.11.0",
     "videojs-contrib-eme": "^3.6.0",

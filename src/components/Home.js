@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import 'url-search-params-polyfill';
 
 // import Player from "./Player";
 // import PlayerTwo from "./PlayerTwo";
