@@ -29,10 +29,10 @@ class Player6 extends Component {
     var manifestUri =
       // "https://livesim.dashif.org/livesim/testpic_2s/Manifest.mpd";
       "https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd";
-    // "https://content.jwplatform.com/manifests/yp34SRmf.m3u8";
-    // "http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TANT/tu1_manifest.m3u8";
-    // "https://storage.googleapis.com/shaka-live-assets/player-source.m3u8";
-    // "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
+      // "https://content.jwplatform.com/manifests/yp34SRmf.m3u8";
+      // "http://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/TANT/tu1_manifest.m3u8";
+      // "https://storage.googleapis.com/shaka-live-assets/player-source.m3u8";
+      // "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
 
     this.player
       .load(manifestUri)
@@ -45,11 +45,11 @@ class Player6 extends Component {
       drm: {
         servers: {
           "com.widevine.alpha": "https://widevine-proxy.appspot.com/proxy",
-          "com.microsoft.playready": "https://playready.directtaps.net/pr/svc/rightsmanager.asmx?PlayRight=1&ContentKey=EAtsIJQPd5pFiRUrV9Layw=="
+          "com.microsoft.playready":
+            "https://playready.directtaps.net/pr/svc/rightsmanager.asmx?PlayRight=1&ContentKey=EAtsIJQPd5pFiRUrV9Layw=="
         }
       }
     });
-
   }
 
   onError(error) {
