@@ -11,9 +11,8 @@ class Player6 extends Component {
 
   componentDidMount() {
     console.log("object");
-    var manifestUri = new URLSearchParams(window.location.search).get("url");
-    manifestUri = manifestUri.replace(/["']/g, "");
-    console.log(manifestUri);
+    this.manifestUri = new URLSearchParams(window.location.search).get("url");
+    console.log(this.manifestUri);
     this.player = new shaka.Player(this.videoNode);
     shaka.media.ManifestParser.registerParserByExtension(
       "m3u8",
@@ -40,7 +39,7 @@ class Player6 extends Component {
     // "https://content.uplynk.com/channel/d71e847cb6d1424a8288996384a8ebc1.mpd?oid=d09b16c953aa40c98dd8c513526aca5a&ad=espn_latamlive_es&ad.vast3=1&ad.vid=d87aee04-c5a2-4999-84e6-d73d17cb8a87&ad.tfcd=0&ad.adUnit=/espn2_colombia/espnplay/null&ad.pp=espn-core-ssai&ad.vip=179.13.112.247&ad.ppid=&ad.description_url=null&ss_req=1&ad.ssss=vdms&ad.hl=es&ad.npa=0&ad.msid=null&ad.an=espnapp&ad.extcalls=liveconnect&ad.cust_params=chan=espn2_colombia%26authp=null%26nlsnAppID=null%26nlsnDevGrp=devgrp%2CUNWN%26vdm=live%26devOS=null%26devType=null%26plt=null%26swid=%26unid=null%26isDnt=0%26isAutoplay=0%26isMute=0%26vps=null%26stp=vdms%26lang=es%26ip=179.13.112.247&eid=n177a&ct=c&tc=1&exp=1585430313&rn=1377491800&srs=templatetimeline&drm_policy_name=espn_live_drm&geo=n177&sig=6d94163144bc9e58479f4077f3ab0595c31f883f313fd9c260c5a2807786bb7f";
 
     this.player
-      .load(manifestUri)
+      .load(this.manifestUri)
       .then(() => {
         console.log("Ready");
       })
@@ -64,6 +63,7 @@ class Player6 extends Component {
   render() {
     return (
       <div>
+        <h1>{this.manifestUri}</h1>
         <video
           ref={node => (this.videoNode = node)}
           controls={true}
