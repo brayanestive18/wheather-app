@@ -35,7 +35,7 @@ class Player7 extends Component {
       .getKeySystems()
       .forEach(function(item) {
         if (item.systemString === "com.microsoft.playready") {
-          item.setPlayReadyMessageFormat("utf-8");
+          item.setPlayReadyMessageFormat("utf8");
         }
       });
     this.player.initialize(this.videoNode, manifestUri, true);
