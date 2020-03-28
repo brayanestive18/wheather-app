@@ -62,7 +62,8 @@ class Player8 extends Component {
         }
       ],
       keySystems: {
-        "com.widevine.alpha": "https://widevine-proxy.appspot.com/proxy"
+        "com.widevine.alpha": "https://widevine-proxy.appspot.com/proxy",
+        "com.microsoft.playready": "https://playready.directtaps.net/pr/svc/rightsmanager.asmx?PlayRight=1&ContentKey=EAtsIJQPd5pFiRUrV9Layw=="
         
       }
       /*       keySystems: {
@@ -73,6 +74,7 @@ class Player8 extends Component {
 
     this.player.src(src);
     this.player.on("play", this.onPlay.bind(this));
+    this.player.on("error", this.onError.bind(this));
   }
 
   onPlay() {
@@ -80,7 +82,7 @@ class Player8 extends Component {
   }
 
   onError(e) {
-    console.error("ERROR: " + JSON.stringify(e));
+    console.error("ERROR_VIDEOJS: " + JSON.stringify(e));
   }
 
   componentWillUnmount() {
