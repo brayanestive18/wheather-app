@@ -12292,6 +12292,11 @@ url-parse@^1.4.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
+url-search-params-polyfill@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/url-search-params-polyfill/-/url-search-params-polyfill-8.0.0.tgz#17415ca6815ff0661e07737b84bcc28e708a7875"
+  integrity sha512-X4BTaEq1UMz9bTbMKQ6r+CippkKBsFWHiP9wycQc7aHH2Ml/Iieuo44+GJDb77pfP71bONYA/nUd4iokYAxVRQ==
+
 url-toolkit@^2.0.1, url-toolkit@^2.1.1, url-toolkit@^2.1.3, url-toolkit@^2.1.6:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/url-toolkit/-/url-toolkit-2.1.6.tgz#6d03246499e519aad224c44044a4ae20544154f2"
