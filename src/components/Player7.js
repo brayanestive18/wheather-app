@@ -33,14 +33,14 @@ class Player7 extends Component {
 
     this.player = dashjs.MediaPlayer().create();
     this.player.setProtectionData(protData);
-/*     this.player
+    this.player
       .getProtectionController()
       .getKeySystems()
       .forEach(function(item) {
         if (item.systemString === "com.microsoft.playready") {
           item.setPlayReadyMessageFormat("utf8");
         }
-      }); */
+      });
     this.player.initialize(this.videoNode, manifestUri, true);
 
     // this.player.addEventListener("error", this.onError);
