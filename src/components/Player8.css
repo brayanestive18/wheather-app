@@ -1,0 +1,62 @@
+/* Ocultar boton de volumne */
+.video-js .vjs-volume-panel {
+  display: none;
+}
+/* Ocultar boton fullscreen */
+.video-js .vjs-fullscreen-control {
+  display: none;
+}
+/* Ocultar tiempo negativo */
+.video-js .vjs-remaining-time {
+  display: none;
+}
+/* Mostrar tiempo trascurrido de reproducción */
+.video-js .vjs-current-time {
+  display: flex;
+}
+/* Mostrar duración del video */
+.video-js .vjs-duration {
+  display: flex;
+}
+/* Anchar la barra de control */
+.video-js .vjs-control-bar {
+  height: 5em;
+}
+/* Anchar y cambiar posisión del boton play */
+.vjs-button > .vjs-icon-placeholder::before {
+  font-size: 2.8em;
+}
+/* Tamaño de letra tiempo de reproducción */
+.video-js .vjs-time-control {
+  font-size: 2em;
+  line-height: 2.5em;
+}
+/* Barra de progreso */
+.video-js .vjs-progress-holder {
+  height: 1.3em;
+}
+/* Indicador de progreso */
+.video-js .vjs-play-progress::before {
+  font-size: 2.7em;
+  top: -0.265em;
+}
+/* Logo ESPN barra de control */
+.logo-espn {
+  height: auto;
+  width: 120px;
+  margin-top: 1.1em;
+  margin-right: 1em;
+}
+/* Logo Tigo barra de control */
+.logo-tigo {
+
+  height: auto;
+  width: 53px;
+  margin-top: 0.8em;
+  margin-left: 1em;
+
+}
+/* Boton Play */
+.video-js .vjs-play-control {
+  display: none;
+}
